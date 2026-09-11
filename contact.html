@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact XDG Software | Start a Conversation</title>
+  <meta name="description"
+    content="Tell us what you're building, improving, or trying to automate. We'll help you turn it into a practical technology solution." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Boldonse&family=Inter+Tight:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" />
+  <link rel="icon" type="image/png" href="assets/img/xdg-logo.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Page Preloader with XDG Logo -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/img/xdg-logo.png" alt="XDG Logo" class="preloader-logo" width="64" height="64" />
+        <div class="preloader-glow"></div>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <div class="preloader-meta">
+        <span>INITIALIZING</span>
+        <span class="preloader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container container--wide">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/img/xdg-logo.png" alt="XDG Software Logo" width="32" height="32" />
+          <span>XDG SOFTWARE</span>
+        </a>
+        <div class="nav-links" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="index.html#work">Work</a>
+          <a href="studio.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+        <div class="nav-cta-row">
+          <a href="#inquiry" class="btn btn--primary btn--sm">Start a project
+            <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer"><span
+              aria-hidden="true"></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <button class="drawer-close" aria-label="Close menu">Close</button>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="index.html#work">Work</a>
+    <a href="studio.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO SECTION (CONTACT) -->
+    <section class="hero">
+      <div class="container container--wide">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="hero-headline">
+              Let's Build<br />
+              <span class="lime">Something</span><br />
+              Useful
+            </h1>
+            <p class="hero-sub">
+              Tell us what you're building, improving, or trying to automate. We'll help you turn it into a practical
+              technology solution.
+            </p>
+            <div class="hero-cta-row">
+              <a class="btn btn--primary btn--lg" href="#inquiry">Send an Inquiry
+                <svg class="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+                  <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a class="btn btn--ghost btn--lg" href="services.html">Review Capabilities</a>
+            </div>
+            <div class="hero-meta">
+              <span><strong>Direct Discussion</strong> / With senior engineering leads</span>
+              <span class="meta-sep" aria-hidden="true">/</span>
+              <span><strong>Fast Response</strong> / Within 24 business hours</span>
+              <span class="meta-sep" aria-hidden="true">/</span>
+              <span><strong>No Hard Pitch</strong> / Pragmatic advice first</span>
+            </div>
+          </div>
+          <div class="hero-media reveal">
+            <img src="assets/img/code/code-hero.jpg"
+              alt="XDG Software engineering collaboration and technical inquiry consultation" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRY FORM SECTION -->
+    <section id="inquiry">
+      <div class="container container--narrow">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Project Inquiry</span>
+            <h2>Tell Us About<br />Your Project</h2>
+          </div>
+          <p class="lede">
+            Share the challenge, idea, or process you want to improve. You do not need to know the technical solution
+            yet, because understanding the business problem is a great place to start.
+          </p>
+        </div>
+
+        <form class="form-card reveal" action="#" method="post"
+          onsubmit="event.preventDefault(); alert('Thank you for reaching out! The XDG Software team will review your project and get back to you shortly.');">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Alex Morgan" required />
+            </div>
+            <div class="form-field">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" placeholder="Acme Logistics or Studio" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+            </div>
+            <div class="form-field">
+              <label for="whatsapp">WhatsApp / Phone</label>
+              <input type="text" id="whatsapp" name="whatsapp" placeholder="+62 812 3456 7890" />
+            </div>
+          </div>
+
+          <div class="form-field form-row--full">
+            <label for="need">What do you need?</label>
+            <select id="need" name="need">
+              <option value="web">Web Application</option>
+              <option value="mobile">Mobile Application</option>
+              <option value="erp">ERP &amp; Business System</option>
+              <option value="iot">IoT Solutions</option>
+              <option value="ai-automation">AI Automation</option>
+              <option value="training">IT &amp; Workforce Training</option>
+              <option value="other">Other / Multi-System Architecture</option>
+            </select>
+          </div>
+
+          <div class="form-field form-row--full">
+            <label for="details">Tell us about your project *</label>
+            <textarea id="details" name="details"
+              placeholder="What are you trying to build, improve, automate, or connect? Tell us how the process works today and what you would like to make better."
+              required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <small>We protect your operational confidentiality under strict NDA standards.</small>
+            <button type="submit" class="btn btn--primary btn--lg">
+              Send Inquiry
+              <svg class="arrow" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+                <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- NOT SURE WHAT YOU NEED (Reverse Tile Paper Section) -->
+    <section class="chapter tile-section">
+      <div class="container container--narrow">
+        <div class="chapter-grid">
+          <div>
+            <span class="label">Not Sure What You Need?</span>
+            <h2>Start With the<br />Problem</h2>
+          </div>
+          <div class="chapter-body">
+            <p style="font-size: var(--text-xl); font-weight: 500; color: var(--ink-000);">
+              You do not need a technical specification before contacting us.
+            </p>
+            <blockquote class="pull-quote">
+              If you can explain how your process works today, where your team loses time, or what you wish the system
+              could do, we can help identify the right approach.
+            </blockquote>
+            <p>
+              We frequently meet partners whose current operations run on messy spreadsheets, fragmented messaging apps,
+              and manual paper trails. You don't have to decide between an ERP, a custom web app, or an automated
+              webhook bridge right now. We diagnose the friction and map the practical route.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECT CTA -->
+    <section class="closing-cta">
+      <div class="container container--narrow">
+        <span class="label" style="color: rgba(255,255,255,0.85);">Direct CTA</span>
+        <h2>Have a project in mind?</h2>
+        <p class="lede">
+          Let's talk about what you want to build and what success should look like.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn--dark btn--lg" href="#inquiry">Start a Conversation
+            <svg class="arrow" width="16" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true">
+              <path d="M1 5h12m0 0L9 1m4 4L9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="services.html">Explore Capabilities</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer-header">
+        <a href="index.html" class="footer-logo-circle" aria-label="XDG Software Home">
+          <img src="assets/img/xdg-logo.png" alt="XDG Software Logo" width="24" height="24" />
+        </a>
+      </div>
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Contacts</h4>
+          <div class="footer-contact-list">
+            <a href="mailto:hello@xdgsoftware.com">hello@xdgsoftware.com</a>
+            <a href="https://wa.me/6285746139883" target="_blank" rel="noopener">+62 857-4613-9883</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Location</h4>
+          <p>Indonesia</p>
+          <p>Remote-First Studio</p>
+          <p>Serving Clients Worldwide</p>
+        </div>
+        <div class="footer-col">
+          <h4>Want to work with us?</h4>
+          <div>
+            <a href="contact.html" class="footer-touch-link">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 XDG Software. All rights reserved.</span>
+        <div class="footer-meta-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+
+</html>
