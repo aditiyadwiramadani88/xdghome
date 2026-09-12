@@ -110,7 +110,7 @@
     bales: {
       title: 'Bales.ai',
       tag: 'Agentic AI / B2B SaaS / Marketing Automation',
-      desc: 'An Agentic AI platform that helps businesses automate customer conversations, lead engagement, and follow-ups across multiple channels. Bales.ai combines intelligent AI agents, real-time automation, and business integrations to engage customers 24/7, take action autonomously, and turn more conversations into sales',
+      desc: 'An Agentic AI platform that helps businesses automate customer conversations, lead engagement, and follow ups across multiple channels. Bales.ai combines intelligent AI agents, real-time automation, and business integrations to engage customers 24/7, take action autonomously, and turn more conversations into sales',
       images: [
         { src: 'assets/img/projects/balesiaja/User/Dashboards-Bales-ai.png', alt: 'Real-Time Operations & Live Metrics Dashboard' },
         { src: 'assets/img/projects/balesiaja/User/AI-Agents.png', alt: 'AI Agents Directory & Autonomous Engagement Workflows' },
